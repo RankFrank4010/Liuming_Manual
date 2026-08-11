@@ -143,12 +143,14 @@ export default defineConfig({
       label: 'English',
       lang: 'en-US',
       link: '/en/',
+      title: 'LiuMing Docs',
+      description: 'LiuMing Documentation',
       themeConfig: {
         logo: '/liuming.png',
         nav: [
-          { text: 'Back to FranJ2', link: 'https://franj2.com/' },
-          { text: 'test', link: 'https://bot-manual.commspt.franj2.com/' },
-          { text: 'test', link: 'https://afdian.com/a/tnqzh123' }
+          { text: 'Back to LiuMing', link: 'https://liuming.franj2.top/' },
+          { text: 'Back to LiuMing Forum', link: 'https://liumingbbs.franj2.top/' },
+          { text: 'FranJ2', link: 'https://franj2.top/' },
         ],
 
         docFooter: {
@@ -176,35 +178,59 @@ export default defineConfig({
         sidebar: {
           '/en/': [
             {
-              text: 'LiuMing Docs',
+              text: 'Getting Started',
               link: '/en/',
             },
             {
               text: 'Community Rules',
               collapsed: false,
               items: [
+                { text: 'Discussion Guide', link: '/en/policies/discussion' },
+                { text: 'Community Rules & Penalties', link: '/en/policies/rule' },
                 { text: 'Terms of Service', link: '/en/policies/tos' },
-                { text: 'Privacy Policy', link: '/en/policies/privacy' },
               ]
             },
             {
               text: 'Operation Guide',
               collapsed: false,
-              items: []
+              items: [
+                { text: 'Registration & Login', link: '/en/basic/account' },
+                { text: 'Feature Overview', link: '/en/basic/features' },
+                { text: 'Question Bank', link: '/en/basic/bank' },
+                { text: 'Input & Editor', link: '/en/basic/editor' },
+                { text: 'Practice & Grading', link: '/en/basic/judge' },
+                { text: 'Learning Data & Wrong-answer Book', link: '/en/basic/practice-stats' },
+                { text: 'Calculation Zone', link: '/en/basic/calc' },
+                { text: 'Paper Generation', link: '/en/basic/paper' },
+                { text: 'Paper Library', link: '/en/basic/paper-uploads' },
+                { text: 'Competitions', link: '/en/basic/competition' },
+                { text: 'Teams', link: '/en/basic/team' },
+                { text: 'Problem Lists', link: '/en/basic/problem-list' },
+                { text: 'Grading Center', link: '/en/basic/grading' },
+                { text: 'Parental Guardian', link: '/en/basic/guardian' },
+                { text: 'Points & Benefits', link: '/en/basic/rewards' },
+                { text: 'Account & Security', link: '/en/basic/account-safety' },
+              ]
             },
             {
               text: 'Academic Standards',
               collapsed: false,
-              items: []
+              items: [
+                { text: 'Academic Standards Overview', link: '/en/academic/' },
+                { text: 'Problem & Problem List Standards', link: '/en/academic/problem' },
+                { text: 'Solution & Article Standards', link: '/en/academic/article' },
+                { text: 'AI Usage Policy', link: '/en/academic/ai' },
+                { text: 'Competition Standards', link: '/en/academic/competition' },
+              ]
             },
           ]
         },
         footer: {
-          copyright: 'Copyright © 2023-present FranJ2 | 京ICP备12345678号 | 京公网安备11010802012345号',
+          copyright: 'Copyright © 2023-present LiuMing',
         },
 
         socialLinks: [
-          { icon: 'github', link: 'https://github.com/LittleSkinChina/manual-ng' },
+          { icon: 'github', link: 'https://github.com/RankFrank4010/Liuming_Manual' },
         ],
       }
     }
