@@ -123,6 +123,7 @@ export default defineConfig({
               items: [
                 { text: '学术规范总览', link: '/academic/' },
                 { text: '题目与题单规范', link: '/academic/problem' },
+                { text: '难度星级判定标准', link: '/academic/difficulty' },
                 { text: '题解与文章规范', link: '/academic/article' },
                 { text: 'AI 使用规范', link: '/academic/ai' },
                 { text: '比赛规范', link: '/academic/competition' },
@@ -218,6 +219,7 @@ export default defineConfig({
               items: [
                 { text: 'Academic Standards Overview', link: '/en/academic/' },
                 { text: 'Problem & Problem List Standards', link: '/en/academic/problem' },
+                { text: 'Difficulty Star Rating Standards', link: '/en/academic/difficulty' },
                 { text: 'Solution & Article Standards', link: '/en/academic/article' },
                 { text: 'AI Usage Policy', link: '/en/academic/ai' },
                 { text: 'Competition Standards', link: '/en/academic/competition' },

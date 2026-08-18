@@ -2,19 +2,36 @@
 
 The Calculation Zone is dedicated practice designed for arithmetic training in primary and junior high school: the **system generates the questions and grades them automatically**, with no manual scoring needed. It's ideal for repeated drills on mental math and basic arithmetic.
 
-## Seven Types of Calculation Questions
+## Nine Types of Calculation Questions
 
-It covers the following seven types of questions, matching arithmetic training across different grades:
+It covers the following nine types of questions, matching arithmetic training across different grades:
 
 | Category | Description |
 | --- | --- |
 | Mental math | Simple mental arithmetic of addition, subtraction, multiplication and division |
 | Clever four-operation arithmetic | Clever computation using the laws of arithmetic |
 | Integral expressions | Operations on integral expressions |
-| Decimal calculation | Four operations on decimals |
-| Fraction calculation | Four operations on fractions |
 | Linear equations in one variable | Solving linear equations in one variable |
 | Factorization | Factorization practice |
+| Linear inequalities in one variable | Solving linear inequalities in one variable |
+| Systems of linear inequalities | Solving systems of linear inequalities in one variable |
+| Quadratic equations in one variable | Solving quadratic equations in one variable |
+| Systems of linear equations | Solving systems of linear equations |
+
+::: tip Where did decimal and fraction calculation go?
+Decimals and fractions are no longer separate categories; they are now **options** that can be layered on top of other categories (see "Options" below). Selecting the relevant option makes the numbers in the questions include decimals or fractions.
+:::
+
+## Options
+
+Some categories support extra number options that control the range of numbers in the questions:
+
+- **Allow negative numbers**: numbers may be negative.
+- **Allow decimals**: numbers may be decimals (e.g. 1.25).
+- **Allow fractions**: numbers may be fractions (e.g. 3/4).
+- **Allow irrational numbers**: numbers may be irrational (e.g. √2).
+
+The available options differ by category; follow what the page displays.
 
 ## Difficulty
 
@@ -56,8 +73,12 @@ The "Calculation" page provides statistics by category:
 
 - **Total questions / correct count / accuracy**.
 - **Today's practice / today's correct / today's accuracy**: your performance for the day at a glance.
-- Per-category totals for each of the **seven types**, with questions, correct count and accuracy, helping you locate the categories where you're weakest in arithmetic.
+- Per-category totals for each of the **nine types**, with questions, correct count and accuracy, helping you locate the categories where you're weakest in arithmetic.
 
 ## Also Included: Integration with Paper Generation
 
 Calculation questions can not only be practiced online, they also participate in paper generation as a **"calculation question group"** (see [Paper Generation Details](/en/basic/paper)): you can add a "calculation question group" to a paper by category / difficulty / question count, and the system generates the same batch of calculation questions from a fixed seed and renders them into the PDF. Great for making mental math sheets and calculation sheets.
+
+::: warning No Need to Contribute Duplicates
+All nine types in the Calculation Zone are **auto-generated and auto-graded** by the system and already provide complete support for the corresponding knowledge points. Therefore, such questions **do not need to be and will not be accepted** if submitted to the question bank through "Contribute Question" (see [Problem & Problem Set Standards](/en/academic/problem)). Practice them directly in the Calculation Zone, or generate the corresponding calculation question group through paper assembly.
+:::

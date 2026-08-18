@@ -75,13 +75,26 @@ When contributing a question (path: the "Contribute Question" entry in the navig
 - **Title**: concise and reflective of the question's content. Avoid meaningless titles (such as "Question 1" or "made up casually") or titles unrelated to the subject.
 - **Subject and sub-discipline**: choose the correct subject. Mathematics, physics, chemistry, biology, geography, and history are further divided into sub-disciplines; choose the closest fit (such as "Geometry", "Mechanics", "Ancient Chinese History").
 - **Grade level**: choose according to the question's actual applicable grade range (lower elementary / upper elementary / middle school / high school). Note that physics, chemistry, geography, history, and politics do not have elementary school levels; follow what the platform displays when choosing.
-- **Difficulty stars**: honestly choose the **basic difficulty** (gimme / easy / medium / hard / extremely hard); STEM subjects may additionally choose a **competition difficulty** (comp- up to IMO+). Deliberately inflating or deflating the difficulty interferes with the site-wide difficulty search and learning recommendations and counts as improper behavior.
+- **Difficulty stars**: honestly choose the **basic difficulty** (gimme / easy / medium / hard / extremely hard); STEM subjects may additionally choose a **competition difficulty** (comp- up to IMO+). The determination standards for each level (including subject-specific anchors) are in the [Difficulty Star Rating Standards](/en/academic/difficulty). Deliberately inflating or deflating the difficulty interferes with the site-wide difficulty search and learning recommendations and counts as improper behavior.
 - **Question type**: choose according to the question's actual answering mode (fill-in-the-blank / multiple choice / equivalent expression / true-false / proof / word problem / short answer / essay / listening, etc.). Different subjects support different question types; follow what the platform displays.
 - **Tags**: choose fitting knowledge-point tags; if no suitable tag exists, you may propose a new one. Tags are an important basis for search and learning recommendations; **do not use tags unrelated to the question** to pad the count.
 - **Editor mode**: both visual mode and code mode are acceptable; both save as Markdown and can be switched at any time. For STEM formulas, the **visual formula input** feature is recommended to ensure correct LaTeX from the start.
 
 ::: warning Content Safety
 Question content must not contain any illegal, sensitive, pornographic, violent, or discriminatory material, and must not touch on politically sensitive topics. Such content will be rejected outright once discovered and may incur serious penalties (see the [Community Rules and Penalties](/en/policies/rule)).
+:::
+
+### Questions Already Covered by the Calculation Zone (Not Accepted)
+
+**Contributions of problems that the Calculation Zone already fully supports are no longer accepted.** The Calculation Zone (see the [Calculation Zone Guide](/en/basic/calc)) covers nine types of calculation questions — mental math, clever four-operation arithmetic, integral expressions, linear equations in one variable, factorization, linear inequalities in one variable, systems of linear inequalities, quadratic equations in one variable, and systems of linear equations — all **auto-generated and auto-graded** by the system, with any number of questions reproducible by category / difficulty / options. These knowledge points already have complete functional support, so contributing similar problems to the question bank:
+
+- **Wastes review resources**: the system can generate the same kind of problems instantly; neither manual question-setting by contributors nor question-by-question review by administrators is necessary;
+- **Dilutes question bank quality**: simple calculation problems mixed into the bank interfere with difficulty search and learning recommendations.
+
+Therefore, problems that fall within the nine Calculation Zone types and do not exceed its capabilities **will be directly rejected during review**. Please practice in the [Calculation Zone](/en/basic/calc) instead, or generate the corresponding calculation question group through [Paper Generation](/en/basic/paper). If you believe a problem goes beyond the Calculation Zone's support scope (for example, it involves a more complex solution or special requirements), state this in the title or tags when submitting so administrators can judge.
+
+::: danger Repeated Submission
+Repeatedly resubmitting rejected calculation problems counts as wasting administrative resources and will be handled under the [Community Rules and Penalties](/en/policies/rule), possibly resulting in revoked contribution permission.
 :::
 
 ## 4. Attachment Standards
@@ -143,6 +156,7 @@ Violations involving questions and problem sets are handled in tiers by severity
 | Case | Handling |
 | --- | --- |
 | Unclear statement, formatting errors, improper tags | Review rejection with reason, returned for revision |
+| Submitting calculation problems already covered by the Calculation Zone | Review rejection with reason (see "Questions Already Covered by the Calculation Zone" above) |
 | Repeatedly submitting low-quality / meaningless questions | Warning; severe cases revoke contribution permission |
 | Plagiarizing questions, uploading infringing content | Warning → mute → ban (per severity and repeat offenses) |
 | Malicious spam, batch junk contributions | Mute → account ban |

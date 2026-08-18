@@ -18,10 +18,14 @@ Academic standards are the concretization of the [Community Rules and Penalties]
 
 ## Section Navigation
 
-This section contains four standards covering four types of academic activities: questions and problem sets, solutions and articles, AI assistance, and competitions:
+This section contains five standards covering five types of academic activities: questions and problem sets, difficulty star ratings, solutions and articles, AI assistance, and competitions:
 
 <NCard title="Problem & Problem Set Standards" link="./problem">
 The question bank and problem sets are LiuMing's core accumulation. This page defines the originality requirements, question statement quality standards, subject tag and attachment specifications, review and appeal process, and the consequences of plagiarism or malicious contribution when contributing questions and problem sets.
+</NCard>
+
+<NCard title="Difficulty Star Rating Standards" link="./difficulty">
+The difficulty star rating determines where a question sits in search, paper assembly, and learning recommendations. Anchored to mathematics (the new Gaokao I paper, league / CMO / IMO), this page defines the determination standards for each basic and competition star level and generalizes them to all subjects.
 </NCard>
 
 <NCard title="Solution & Article Standards" link="./article">
@@ -111,6 +115,7 @@ A rejected question or problem set contribution can initiate an **appeal** to re
 | What you are doing | What to read |
 | --- | --- |
 | Contributing questions, submitting revision suggestions | [Problem & Problem Set Standards](/en/academic/problem) |
+| Determining how many stars a question should get | [Difficulty Star Rating Standards](/en/academic/difficulty) |
 | Creating a public problem set | [Problem & Problem Set Standards](/en/academic/problem) |
 | Posting in the discussion forum, writing column articles | [Solution & Article Standards](/en/academic/article) |
 | Using AI to assist writing, question setting, or answering | [Generative AI Usage Standards](/en/academic/ai) |
@@ -156,6 +161,7 @@ Before participating in academic contributions (setting questions, building prob
 ## Related Links
 
 - Read the [Problem & Problem Set Standards](/en/academic/problem) to learn how to contribute a qualified question.
+- Read the [Difficulty Star Rating Standards](/en/academic/difficulty) to learn how to determine a question's star rating.
 - Read the [Solution & Article Standards](/en/academic/article) to learn how to write a good post.
 - Read the [Generative AI Usage Standards](/en/academic/ai) to understand the boundaries of AI assistance.
 - Read the [Competition Standards](/en/academic/competition) to learn how to organize or participate in a competition.

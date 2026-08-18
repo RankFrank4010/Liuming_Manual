@@ -38,8 +38,8 @@ Multiple choice supports **single-answer / multiple-answer / unspecified-answer*
 - **School levels**: Questions are divided into lower elementary, upper elementary, middle school, and high school. Physics, chemistry, geography, history, and politics do not offer elementary levels.
 - **Difficulty stars** (chosen when submitting a question): two systems:
   - **Basic stars**: giveaway, easy, medium, hard, extremely hard.
-  - **Competition stars** (kept only for science subjects): Comp-, Comp, Comp+, CMO-, CMO, CMO+, IMO, IMO+.
-  - Chinese, English, geography, history, and politics keep only the basic stars and do not offer competition stars.
+  - **Competition stars**: Comp-, Comp, Comp+ are the shared entry levels for all subjects; STEM subjects name them by their own olympiad system (CMO/IMO for mathematics, CPhO/IPhO for physics, CChO/IChO for chemistry, CBO/IBO for biology), while non-STEM subjects use 国-, 国, 国家队 (provincial / national / national team).
+  - The determination standards for each star level (including subject-specific anchors) are in the [Difficulty Star Rating Standards](/en/academic/difficulty).
 
 ### Dynamic Difficulty Rating
 
@@ -79,6 +79,10 @@ Once logged in, you can favorite questions, with support for adding, removing, a
 ## Contributing Questions
 
 Anyone can contribute questions to the community (via "Contribute a Question" in the navigation).
+
+::: warning Questions Already Covered by the Calculation Zone Are Not Accepted
+The Calculation Zone already covers nine types of calculation questions — mental math, clever four-operation arithmetic, integral expressions, linear equations in one variable, factorization, linear inequalities in one variable, systems of linear inequalities, quadratic equations in one variable, and systems of linear equations — all **auto-generated and auto-graded** by the system. There is no need to contribute duplicates to the question bank; such submissions will be **rejected during review** (see the [Problem & Problem Set Standards](/en/academic/problem) and the [Calculation Zone Guide](/en/basic/calc)).
+:::
 
 ### What to Fill In
 
