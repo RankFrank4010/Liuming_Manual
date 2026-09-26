@@ -5,6 +5,7 @@
     "@nolebase/vitepress-plugin-enhanced-mark": "^2.16.0",
     "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.18.1",
     "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.16.0",
+    "markdown-it-mathjax3": "^5.2.0",
     "vitepress": "1.6.4"
   },
   "scripts": {

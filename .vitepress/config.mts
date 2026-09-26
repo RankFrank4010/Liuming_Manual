@@ -27,6 +27,7 @@ export default defineConfig({
   appearance: true,
 
   markdown: {
+    math: true,
     theme: { light: 'catppuccin-latte', dark: 'one-dark-pro' },
     image: { lazyLoading: true },
   },
@@ -76,7 +77,7 @@ export default defineConfig({
           'label': '在此页面上'
         },
         editLink: {
-          pattern: 'https://github.com/RankFrank4010/Liuming_Manual',
+          pattern: 'https://github.com/RankFrank4010/Liuming_Manual/edit/main/:path',
           text: '帮助我们完善这个页面'
         },
 
@@ -90,7 +91,8 @@ export default defineConfig({
               text: '社区规则',
               collapsed: false,
               items: [
-                // { text: '用户服务条款', link: '/policies/tos' },
+                { text: '用户服务条款', link: '/policies/tos' },
+                { text: '隐私政策', link: '/policies/privacy' },
                 { text: '讨论区指南', link: '/policies/discussion' },
                 { text: '社区规则及处罚', link: '/policies/rule' },
               ]
@@ -104,14 +106,22 @@ export default defineConfig({
                 { text: '题库', link: '/basic/bank' },
                 { text: '输入与编辑器', link: '/basic/editor' },
                 { text: '练习与判题', link: '/basic/judge' },
+                { text: '特殊题型', link: '/basic/special-types' },
                 { text: '学习数据与错题本', link: '/basic/practice-stats' },
                 { text: '计算专区', link: '/basic/calc' },
                 { text: '组卷', link: '/basic/paper' },
+                { text: 'AI 智能组题', link: '/basic/ai-compose' },
                 { text: '整卷库', link: '/basic/paper-uploads' },
                 { text: '比赛', link: '/basic/competition' },
                 { text: '团队', link: '/basic/team' },
                 { text: '题单', link: '/basic/problem-list' },
                 { text: '批改中心', link: '/basic/grading' },
+                { text: '口语题', link: '/basic/speaking' },
+                { text: '听力TTS', link: '/basic/listening' },
+                { text: '听力音频剪辑', link: '/basic/listening-clip' },
+                { text: '贡献流转单', link: '/basic/flow-sheet' },
+                { text: '题目管理', link: '/basic/problem-management' },
+                { text: '版本回退', link: '/basic/version-rollback' },
                 { text: '家长监护', link: '/basic/guardian' },
                 { text: '积分与权益', link: '/basic/rewards' },
                 { text: '账户与安全', link: '/basic/account-safety' },
@@ -172,7 +182,7 @@ export default defineConfig({
           'label': 'On this page'
         },
         editLink: {
-          pattern: 'https://github.com/RankFrank4010/Liuming_Manual',
+          pattern: 'https://github.com/RankFrank4010/Liuming_Manual/edit/main/:path',
           text: 'Help us improve this page'
         },
 
@@ -189,6 +199,7 @@ export default defineConfig({
                 { text: 'Discussion Guide', link: '/en/policies/discussion' },
                 { text: 'Community Rules & Penalties', link: '/en/policies/rule' },
                 { text: 'Terms of Service', link: '/en/policies/tos' },
+                { text: 'Privacy Policy', link: '/en/policies/privacy' },
               ]
             },
             {
@@ -200,14 +211,22 @@ export default defineConfig({
                 { text: 'Question Bank', link: '/en/basic/bank' },
                 { text: 'Input & Editor', link: '/en/basic/editor' },
                 { text: 'Practice & Grading', link: '/en/basic/judge' },
+                { text: 'Special Question Types', link: '/en/basic/special-types' },
                 { text: 'Learning Data & Wrong-answer Book', link: '/en/basic/practice-stats' },
                 { text: 'Calculation Zone', link: '/en/basic/calc' },
                 { text: 'Paper Generation', link: '/en/basic/paper' },
+                { text: 'AI Smart Compose', link: '/en/basic/ai-compose' },
                 { text: 'Paper Library', link: '/en/basic/paper-uploads' },
                 { text: 'Competitions', link: '/en/basic/competition' },
                 { text: 'Teams', link: '/en/basic/team' },
                 { text: 'Problem Lists', link: '/en/basic/problem-list' },
                 { text: 'Grading Center', link: '/en/basic/grading' },
+                { text: 'Speaking Questions', link: '/en/basic/speaking' },
+                { text: 'Listening TTS', link: '/en/basic/listening' },
+                { text: 'Audio Clip Editing', link: '/en/basic/listening-clip' },
+                { text: 'Contribution Flow Sheet', link: '/en/basic/flow-sheet' },
+                { text: 'Problem Management', link: '/en/basic/problem-management' },
+                { text: 'Version Rollback', link: '/en/basic/version-rollback' },
                 { text: 'Parental Guardian', link: '/en/basic/guardian' },
                 { text: 'Points & Benefits', link: '/en/basic/rewards' },
                 { text: 'Account & Security', link: '/en/basic/account-safety' },
