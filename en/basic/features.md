@@ -1,7 +1,3 @@
----
-title: Feature Overview
----
-
 # Feature Overview
 
 LiuMing (https://liuming.franj2.top) is an exercise community founded in 2026, covering all grades from primary school to senior high school across nine subjects, and offering one-stop learning services including online practice, automatic grading, paper assembly, contests, team collaboration, and AI grading.
@@ -24,19 +20,23 @@ For a detailed tutorial, see [Input and Editor](/en/basic/editor).
 The question bank is the core of LiuMing. Problems are contributed by community users and published after review by admins.
 
 - **Nine subjects**: Math, Chinese, Physics, Chemistry, Biology, English, Geography, History, and Politics. Math, Physics, Chemistry, Biology, Geography, and History are further divided into sub-disciplines (such as algebra, geometry, calculus, mechanics, electricity, physical geography, and ancient Chinese history).
-- **Multiple question types**: fill-in-the-blank, multiple choice (single / multiple / indeterminate), equivalent expressions, true or false, proof, application, short answer, and essay questions. Some subjects support listening questions.
+- **Multiple question types**: fill-in-the-blank, multiple choice (single / multiple / indeterminate), short answer, essay, and speaking questions; Chinese adds **reading comprehension** (passage + sub-questions), and English adds **cat-fishing** (word-bank cloze) and **listening**. The former "equivalent expression" and "true / false" types are now folded into fill-in-the-blank / multiple choice, and "proof / application" into short answer.
 - **Grade levels and difficulty**: problems are divided into the grade levels "lower primary / upper primary / junior high / senior high"; difficulty ranges from the basic star rating of "easy ~ extremely hard" to subject-specific contest star ratings (STEM subjects name them by their own olympiad system, e.g. CMO/IMO for mathematics and CPhO/IPhO for physics; non-STEM subjects use 国- / 国 / 国家队 — provincial / national / national team; see the [Difficulty Star Rating Standards](/en/academic/difficulty)).
 - **Tag system**: problems carry tags for subject, grade level, question type, and knowledge point, with multi-dimensional filtering (keyword, subject, question type, grade level, difficulty, tag) and sorting by difficulty for precise searching.
 - **Problem ID (Code)**: every problem has a unique ID (for example `M0001`) used for paper assembly, references, and discussion.
 - **Favorites**: add the problems you practice often to favorites for quick review.
 - **Contribute problems**: anyone can contribute problems, with formula editing and attachment uploads (such as images and listening audio). Contributed problems are published after admin review; suggested revisions (new versions) of problems also go through the review process and are fully traceable.
+- **Contribution flow sheet**: view the complete flow record of a problem from creation to review, including creation information, revision history, and review logs, with fields trimmed by role (admin/creator/contributor).
+- **Version rollback**: for published problems, you can roll back to a historical version, ensuring content safety and traceability.
 
 ## Practice and Grading
 
-- **Answer online**: open a problem and answer it. Objective questions such as fill-in-the-blank, multiple choice, and equivalent expressions are graded automatically by the system with instant correct / incorrect feedback.
+- **Answer online**: open a problem and answer it. Objective questions such as fill-in-the-blank, multiple choice, cat-fishing, and reading comprehension (by sub-question) are graded automatically by the system with instant correct / incorrect feedback.
   - Fill-in-the-blank supports exact matching, numeric tolerance (±0.01, etc.), percentage tolerance, and constant evaluation (such as π, e).
   - Multiple choice supports single, multiple, and indeterminate modes.
-  - Subjective questions such as proof, application, short answer, and essay can be **self-graded**, or **graded by someone you invite and trust**.
+  - Subjective questions such as short answer and essay can be **self-graded**, **graded by someone you invite and trust**, or — for questions without a standard answer — **AI-assisted graded** shortly after submission (asynchronous, consumes no quota), which then updates the standard answer.
+  - **Speaking questions**: record audio answers, AI auto-scores (0-10 points, 0.5 step), ideal for English speaking practice and contests.
+  - **Listening questions**: play listening audio to answer, with listening materials to assist grading.
 - **Multi-part problems**: a large problem can be split into multiple sub-parts, answered and graded separately.
 - **Answer images**: graders and self-graders can upload images of answers to show handwritten work.
 
@@ -57,24 +57,30 @@ The system automatically records every practice session and builds a multi-dimen
 
 A dedicated practice area designed for primary and junior high calculation training, with automatic problem generation and automatic grading:
 
-- **Seven calculation types**: mental arithmetic, clever four-operation arithmetic, polynomial expressions, decimal calculation, fraction calculation, one-variable linear equations, and factoring.
+- **Ten calculation types**: mental arithmetic, clever four-operation arithmetic, polynomial expressions, one-variable linear equations, factoring, linear inequalities, systems of linear inequalities, quadratic equations in one variable, systems of linear equations, and trigonometric functions.
 - **Selectable difficulty**: easy / medium / hard.
 - **Batch generation**: generate any number of problems at once.
 - **Instant grading**: after submitting, each problem is graded individually, with accuracy and category statistics returned.
+- **Rich options**: some question types support options for allowing negatives, decimals, fractions, and irrational numbers; trigonometric functions support sin/cos/tan function selection; polynomial expressions support trigonometric function and fraction extensions.
 
 ## Paper Assembly
 
 Enter problem IDs to generate a complete paper PDF:
 
 - **Assemble by ID**: one ID per line (comma and space separated supported); the system parses the problems automatically, and you can remove, clear, or reorder them.
+- **AI smart compose**: describe your requirement in natural language (e.g. "a grade-9 math midterm focused on quadratic functions and similar triangles, 10 multiple-choice + 4 fill-in-the-blank + 3 free-response, 100 points"); the AI picks problems from the bank and designs the whole paper structure, with an optional subject scope and a selection cap; each run consumes 1 AI quota credit and is refunded automatically on failure.
 - **Major problem groups**: drag sub-parts into "major problem" groups, with titles and point values you can set.
-- **Paper information**: set the paper title, total score, completion time, candidate instructions, and footer page numbers; supports automatic point distribution and consistency checks.
+- **Paper information**: set the paper title, subtitle, subject (optionally auto-inferred from the problems), total score, completion time, candidate instructions, and footer page numbers; supports automatic point distribution and consistency checks.
 - **Two layouts**:
   - **Simple layout**: quick generation.
   - **Complex layout**: fine-grained configuration of the seal line (range, line style, circles, candidate info), header, candidate information field, multiple choice option layout (columns, labels, spacing), fill-in-the-blank styles (underline / parentheses / circles, etc.), fonts (Western + math fonts), paper size (A4 / A3 / custom), booklet mode (cover, reserved answer areas), and teacher version (answers shown in blanks / parentheses, with solutions attached), among others.
 - **Export options**: supports attaching solutions (teacher version) and copy protection; the PDF is compiled by the backend LaTeX, so formula typesetting is professional.
 - **Save online**: paper drafts can be saved, loaded, and edited online, with the PDF downloadable at any time.
 - **Inherit from problem lists / contests**: import problem lists from problem lists or contests into paper assembly in one step.
+- **Pure self-designed problems**: support completely custom problems, not dependent on the question bank.
+- **Listening paper generation**: support English listening paper generation, with listening audio on separate pages, configurable voice gender and reading repetitions.
+- **Essay answer area**: essays can use an answer-area style (auto / grid essay paper / ruled lines / none), with configurable rows, columns per row, and line spacing.
+- **Problem images**: adjust the size of statement images and auto-generate "Figure N" captions.
 
 ## Full Paper Library
 
@@ -132,9 +138,9 @@ Centralized management of all answers that need manual grading:
 
 ## Parental Supervision
 
-Parents can bind a student account to check their child's learning remotely (with the student's consent):
+Parents can view the learning of their child (student account); the supervision relationship must be **initiated by the child**:
 
-- **Binding**: a parent sends a binding request using the student's UID; once the student agrees, the supervision relationship is established, and it can be removed at any time.
+- **Binding**: the child (student account) initiates a supervision invitation by entering the parent's **nickname + email**; once the parent accepts, the supervision relationship is established and can be removed at any time.
 - **Viewing learning data**: after binding, parents can view the student's practice statistics, submission history, wrong answer notebook, knowledge graph, knowledge point radar, weak point analysis, favorites and recent practice, and practice heatmap, and can generate AI learning analysis reports.
 
 ## Discussion and Columns

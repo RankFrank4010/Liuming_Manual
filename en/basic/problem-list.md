@@ -34,6 +34,14 @@ A public problem list only becomes visible site-wide after admin review; if you 
 - After submission, a public problem list enters **pending review**; it becomes site-wide visible once an admin approves. Rejections come with a reason.
 - Additions and edits to problem lists are also recorded through the ticket system.
 
+## Big-Question Structure and Export
+
+Starting v1.0, a problem list can be configured with a **big-question structure** like a paper, and exported directly:
+
+1. Open the list's **edit / manage** page and **group its problems into "sections"** (e.g. "1. Multiple choice", "2. Free response"), setting each section's **title** and **per-problem marks**; without it, the list stays in its flat order.
+2. Click "**Export paper**" to export the list (with its section structure) as a **PDF**.
+3. You can also pick the list during **paper generation** to **inherit** its problems and section structure in one step (see [Paper Generation Details](/en/basic/paper)).
+
 ## Use Cases
 
 - Teachers put together "unit topic" practice sets.

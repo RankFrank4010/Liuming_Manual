@@ -108,6 +108,16 @@ Visual mode and code mode are **two "faces" of the same Markdown content**:
 
 So no matter which mode you use to enter formulas, the stored result is the same, and grading, paper assembly, and PDF export all recognize and typeset formulas correctly.
 
+## Visual Insertion and Drawing
+
+When **contributing / editing a problem**, the statement editor has a row of shortcut buttons; each opens a dialog with a live preview, and clicking "**Insert**" writes into the statement:
+
+- **Insert poem**: fill in the **title / author / lines (one per line) / notes**, then click "Insert" to generate a typeset classical-poem statement (at least one line is required).
+- **Insert material**: fill in the **title / author / source / body** (body required), then click "Insert". The template's `# title`, `—— author`, and `(from 《…》)` conventional lines are auto-recognized at export.
+- **Insert matching**: fill in the **left / right columns** (at least 2 items each, one per line) and an optional **third column**, then click "Insert"; enter the correct pairs in the **standard answer** (e.g. `1-3, 2-1, 3-2`); item content cannot contain `|`.
+- **Option images**: on a multiple-choice option, click "Image" to insert an image for that option (uploaded with the attachments on submission and shown on that option).
+- **TikZ / LaTeX drawing**: enter TikZ / LaTeX drawing code in the statement; it is appended to the end and compiled / rendered by xelatex on PDF export.
+
 ## Related
 
 - For how math formulas behave in **answering and grading** (equivalence checking, normalization), see [Practice and Auto-grading](/en/basic/judge).

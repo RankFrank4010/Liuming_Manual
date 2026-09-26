@@ -100,7 +100,9 @@ Admins have the following console capabilities:
 - **Content governance**: handle problem / problem list review, reports, and appeals.
 - **Subject management**: configure subject code prefixes, school stages, and grading parameters (see [Question Bank](/en/basic/bank)).
 - **Plan management**: maintain plan quotas, assign plans and extra quotas to users (see [Grading Center](/en/basic/grading#quota-management)).
-- **AI grading configuration**: configure models, parameters, and limits (see [Grading Center](/en/basic/grading)).
+- **AI grading configuration**: configure models, parameters, and limits, including the **vision model** (image-question grading) and **system TTS** (listening reading) settings (see [Grading Center](/en/basic/grading)).
+- **Review settings**: open the "Review Settings" page, toggle "**Contributed problems require review**" and "**Admin edits to problems require review**" (Require review / No review), and click "**Save**" to apply immediately. Both default to requiring review.
+- **Team / group management**: open the "Teams" admin page to review team / group applications and view / manage sub-teams (see [Team Details](/en/basic/team)).
 
 ::: note
 The admin console isn't part of regular users' usage scope; this section is just for your understanding. For the relevant entry points and more details, see the corresponding feature docs.

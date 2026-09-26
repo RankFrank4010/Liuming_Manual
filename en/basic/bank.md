@@ -4,9 +4,9 @@ The question bank is the core of LiuMing. All questions are contributed by commu
 
 ## Subject System
 
-The question bank covers **nine major subjects**, and the science subjects are further divided into sub-disciplines:
+The question bank covers **nine subjects**, and the science subjects are further divided into sub-disciplines:
 
-| Main Subject | Sub-disciplines |
+| Subject | Sub-disciplines |
 | --- | --- |
 | Math | Algebra, geometry, calculus, probability, number theory, combinatorics, analysis, other |
 | Physics | Physics, mechanics, thermodynamics, acoustics, optics, electromagnetism, physics (other) |
@@ -23,15 +23,19 @@ The question bank covers **nine major subjects**, and the science subjects are f
 
 The supported question types vary by subject (different subjects support different types):
 
-- **Math**: fill-in-the-blank, multiple choice, equivalent expressions, true-false, proof, application
-- **Physics**: fill-in-the-blank, multiple choice, equivalent expressions, true-false, proof, application, short-answer
-- **Chemistry**: fill-in-the-blank, multiple choice, equivalent expressions, true-false, application, short-answer
-- **Biology**: multiple choice, fill-in-the-blank, true-false, application, short-answer
-- **Chinese / English**: multiple choice, fill-in-the-blank, short-answer (answering questions), essay
-- **Geography / History**: multiple choice, fill-in-the-blank, true-false, short-answer (history also includes essays)
-- **Politics**: multiple choice, fill-in-the-blank, true-false, short-answer, essay, application
+- **Math**: fill-in-the-blank, multiple choice, short-answer
+- **Physics**: fill-in-the-blank, multiple choice, short-answer
+- **Chemistry**: fill-in-the-blank, multiple choice, short-answer
+- **Biology**: multiple choice, fill-in-the-blank, short-answer
+- **Chinese / English**: multiple choice, fill-in-the-blank, short-answer, essay
+- **Geography / History**: multiple choice, fill-in-the-blank, short-answer (history also includes essays)
+- **Politics**: multiple choice, fill-in-the-blank, short-answer, essay
 
-Multiple choice supports **single-answer / multiple-answer / unspecified-answer** modes. The English subject supports **listening questions** (question stem + listening audio + listening material).
+Beyond the common types, Chinese also supports **reading comprehension** (passage + sub-questions), and English also supports **cat-fishing** (word-bank cloze) and **listening questions** (question stem + listening audio + listening material); speaking questions are used for English oral practice and contests.
+
+> Question types have been consolidated: "equivalent expressions" is folded into **fill-in-the-blank**, "true-false" into **multiple choice**, and "proof / application" into **short-answer** (see [Problem & Problem Set Standards](/en/academic/problem)).
+
+Multiple choice supports **single-answer / multiple-answer / unspecified-answer** modes.
 
 ## School Levels and Difficulty
 
@@ -105,9 +109,22 @@ If you truly cannot provide certain optional content (solution / answer / listen
 4. After modifying a question (updating content, uploading listening audio), the question **returns to the pending review state** and must be reviewed again.
 5. Every review action is fully logged (reviewer, time, reason) and traceable.
 
-### Change Requests (New-Version Tasks)
+### Contribution Flow Sheet
 
-For published questions, besides editing them directly, you can also submit a "change request" (a complete new version), which goes through the same review flow. Once approved, it replaces the live question. A question's past change requests can be viewed and traced.
+The contribution flow sheet summarizes the complete flow record of a question from creation to review, including:
+
+- **Creation information**: question creator, creation time, initial status.
+- **Revision history**: all submitted revision requests, their review status and reasons.
+- **Review logs**: each review operation's operator, time, reason, and result.
+- **Role-based trimming**: fields are trimmed by role (admin/creator/contributor) to protect privacy.
+
+### Version Rollback
+
+For published questions, you can roll back to a historical version:
+
+- A rollback operation creates a new version record, preserving the complete information of the original version.
+- After rollback, the question status may change to pending review, requiring another review before publishing.
+- Version rollback is fully logged to ensure content safety and traceability.
 
 ## Review
 
@@ -116,6 +133,8 @@ For published questions, besides editing them directly, you can also submit a "c
 - **Questions pending review**: Lists all pending questions, including stem, answer, solution, attachments, and listening material. Approve or reject (with a reason).
 - **Review logs**: The complete review log for each question (action, operator, time, reason).
 - **New-version review**: Review change requests submitted by users.
+- **Question management**: Supports question removal/republishing; removed questions cannot be practiced but historical records are preserved.
+- **Non-compliant question handling**: Processes violating questions, supporting field-level partial rejection (listening audio/answers/solutions can be individually blocked from publishing).
 - Reviewing questions is also linked to the workbench / ticket system logs.
 
 ## Security Boundaries

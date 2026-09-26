@@ -6,10 +6,13 @@ This page explains in detail how LiuMing handles answering, grading, and the ans
 
 Once logged in, you can answer any question you open. The answering experience is determined by the **question type**:
 
-- **Fill-in-the-blank / multiple choice / equivalent expressions / true-false**: Fill in or select directly in the answer area. For science subjects, equivalent expressions and fill-in-the-blank support entering math formulas via **visual formula input** (see [Input and Editor Guide](/en/basic/editor)).
+- **Fill-in-the-blank / multiple choice**: Fill in or select directly in the answer area (the former "equivalent expressions" are folded into fill-in-the-blank, and "true-false" into multiple choice). For science subjects, fill-in-the-blank supports entering math formulas via **visual formula input** (see [Input and Editor Guide](/en/basic/editor)).
+- **Cat-fishing** (English): click a word in the **word-bank box** above the passage → it fills the first gap; click a **used word** → withdraw; click a **filled gap** in the passage → clear. The system auto-grades gap by gap in order. See the [Special Question Types Guide](/en/basic/special-types).
+- **Reading comprehension** (Chinese): read the centered passage, then answer its **sub-questions one by one**, each graded independently. See the [Special Question Types Guide](/en/basic/special-types).
 - **Multiple choice**: Configured per question as single-answer / multiple-answer / unspecified-answer.
-- **Proof / application / short-answer / essay questions**: These have no standard answer. After answering, they enter the **pending grading** state and need [grading](/en/basic/grading) or self-grading.
+- **Short-answer / essay questions** (and other types without a standard answer): after answering, they enter the **pending grading** state and need [grading](/en/basic/grading) or self-grading; submitting also automatically triggers **AI-assisted grading** (consuming no quota).
 - **Listening questions**: You can play the listening audio while answering, and the listening material can help with grading.
+- **Speaking questions**: Record audio answers, AI auto-scores (0-10 points, 0.5 step), reading student recordings against reference text.
 
 ### Multi-Part Questions
 
@@ -21,11 +24,20 @@ A large question can be split into several parts (up to 20). Each part is answer
 
 ## Auto-grading Mechanism
 
-The system **automatically compares** your answer with the standard answer for "equivalence": the same content written differently still counts as correct. Grading covers fill-in-the-blank, multiple choice, equivalent expressions, and true-false questions. Proof, application, short-answer, and essay questions have no standard answer and return "pending grading".
+The system **automatically compares** your answer with the standard answer for "equivalence": the same content written differently still counts as correct. Grading covers fill-in-the-blank, multiple choice, cat-fishing, and reading comprehension (by sub-question). Short-answer, essay, and other types without a standard answer return "pending grading".
 
 ::: note Language questions are not auto-graded
 Fill-in-the-blank, short-answer, and essay questions in Chinese / English are **not auto-graded** even if an answer is configured. Right or wrong, they go to human grading or self-grading (to avoid rigidly applying a single standard to language answers).
 :::
+
+### Speaking Question Scoring Rules
+
+Speaking questions use **score-based grading** (0-10 points, 0.5 step), with the following scoring process:
+
+1. The student records audio answers, and the system calls a speech recognition service.
+2. The AI model scores against the **reference text**, evaluating dimensions such as pronunciation accuracy, fluency, and content completeness.
+3. The score is 0-10 points with 0.5 step, supporting half-point precision.
+4. After scoring, students can view detailed comments and scores.
 
 ### Answer Normalization
 
@@ -94,7 +106,7 @@ Every submission updates the question's submission count and correct count, and 
 
 ## Self-Grading
 
-For answers **pending grading** (proof, application, short-answer, and essay questions, plus fill-in-the-blank, short-answer, and essay questions in Chinese / English), you can:
+For answers **pending grading** (short-answer and essay questions, plus fill-in-the-blank, short-answer, and essay questions in Chinese / English), you can:
 
 - **Self-grade**: Judge the answer correct or wrong against the solution. Objective computational questions can also be self-graded part by part.
 - **Upload answer images**: When self-grading, if you need to show the full handwritten process, you can upload images for convenient recording and review.

@@ -39,9 +39,11 @@ The creator can **invite question setters** to jointly maintain the competition'
 
 - **Answering**: participants answer and submit question by question during the competition (objective questions are judged instantly).
 - **Grading**:
-  - Objective questions (fill-in-the-blank, multiple-choice, equivalent, true/false) are graded automatically by the system.
-  - Subjective questions (proofs, applications, etc.) are marked right or wrong by the **graders** or via **self-grading by participants**, depending on the grading method.
+  - Objective questions (fill-in-the-blank, multiple-choice, reading comprehension, cat-fishing) are graded automatically by the system.
+  - Subjective questions (short-answer, essay, and other types without a standard answer) are marked right or wrong by the **graders** or via **self-grading by participants**, depending on the grading method.
+  - **Speaking questions**: support recording answers, AI auto-scores (0-10 points, 0.5 step), reading student recordings against reference text.
 - Each submission records its grading result and analysis; the grader view centrally shows every question's submissions from all participants and their pending-review status.
+- **Leaderboard speaking total**: the competition leaderboard includes speaking question totals, reflecting participants' speaking proficiency.
 
 ## Leaderboard
 
@@ -52,7 +54,11 @@ The real-time **leaderboard** ranks participants by their answering status:
 
 ## Exporting the Paper
 
-A competition can **generate a complete paper in one click**: export as a PDF in question order (compiled by the backend with LaTeX). The version with solutions (teacher version) is available only to administrators, suitable for printing before the contest and for explanation afterwards.
+A competition can **export a paper in one click**:
+
+1. On the competition's **manage** page, **group questions into "sections"** (e.g. "1. Multiple choice", "2. Free response") and set titles and marks (the big-question structure aligned with paper generation, supported since v1.0).
+2. Click "**Export paper**" to generate a **PDF** in question order (compiled by the backend with LaTeX).
+3. The version with solutions (teacher version) is available only to administrators, suitable for printing before the contest and for explanation afterwards.
 
 ## Replay Competition
 

@@ -29,7 +29,7 @@ Or, put another way, you can:
 - **A closed learning data loop**: a wrong answer notebook, knowledge point radar, knowledge graph, and weak point analysis make every practice session traceable.
 - **Paper assembly and the full paper library**: enter problem IDs to generate a professionally typeset PDF paper in one click, or share and download complete paper files.
 - **Team collaboration**: private problems, homework, contests, and data dashboards for classes and clubs.
-- **Parental supervision**: parents can link a student account (with the student's consent) and keep track of their learning remotely.
+- **Parental supervision**: after the student invites and authorizes a parent, the parent can keep track of the child's learning remotely.
 
 For a full overview of the features, see [Feature Overview](/en/basic/features). For detailed instructions, look up the matching page under "Guides" in the left sidebar as needed.
 

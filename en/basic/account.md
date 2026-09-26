@@ -91,7 +91,7 @@ After you send the SMS, do nothing; just keep the page open and wait. Once the p
 Once verification passes, you'll set up your account:
 
 - **Username**: choose a name your classmates and teachers can recognize; it will be used for password login. This is the name everyone in the community sees, so choose carefully and avoid content that violates rules or is likely to cause controversy.
-- **Password**: set your login password. We recommend a **sufficiently long password mixing letters and numbers**, and don't reuse passwords from other websites. Your password is used for everyday login (see [Password Login](#method-1-password-login-username--password)).
+- **Password**: set your login password. We recommend a **sufficiently long password mixing letters and numbers**, and don't reuse passwords from other websites. Your password is used for everyday login (see [Password Login](#method-1-password-login-username-password)).
 
 ### Step 6: Complete Your Profile
 
@@ -415,7 +415,7 @@ If repeated attempts still get no response, switch to **username + password** lo
 
 - Yes. LiuMing is a practice learning platform for primary and secondary school students; students are welcome to register and use it.
 - Registration requires phone number verification, so use a number in your own or a guardian's name, and use the platform with your parents' knowledge and consent.
-- Parents can bind a student account through the **parental supervision** feature to check their child's learning remotely. See [Parental Supervision](/en/basic/guardian) for details.
+- A student can invite a parent through the **parental supervision** feature; once authorized, the parent can check the child's learning remotely. See [Parental Supervision](/en/basic/guardian) for details.
 
 ### Q: Can one phone number register multiple accounts?
 

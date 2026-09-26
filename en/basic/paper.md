@@ -16,19 +16,40 @@ Go to the "Paper Generation" page, enter the question numbers, and once the ques
 Questions queried by Paper Generation do **not include standard answers or solutions by default** (the Ministry of Education does not allow answers to be exposed directly); only teachers / administrators can request the accompanying solution set (teacher version PDF).
 :::
 
+### AI Smart Compose
+
+Besides entering question numbers manually, you can have the AI compose a paper from a natural-language requirement:
+
+1. On the "Paper Generation" page, click "**AI Compose**" to open the "AI Smart Compose" dialog.
+2. In "**Paper requirement**", describe the paper (grade level / subject / scope / question types and counts / difficulty / total score / duration); you can also set the "**Subject scope**" and a "**Selection cap**" (1-50).
+3. Click "**AI Smart Compose**"; after ten-odd seconds, review the generated "**Paper structure**" (sections with question numbers and marks); click "Compose again", or "**Apply to paper**" to write the questions and marks back into the question-number list.
+
+Each compose consumes 1 AI quota credit (refunded on failure), and questions already in the list are de-duplicated. **For full steps and prompting tips, see the [AI Smart Compose Guide](/en/basic/ai-compose).**
+
 ## Configuring the Paper
 
-- **Paper title**: defaults to "LiuMing Paper Generation", customizable.
+- **Paper title / subtitle / subject**: the title defaults to "LiuMing Paper Generation" and is customizable; you can also set a **subtitle** (shown directly under the main title, optional) and the **subject** (choose "Auto (inferred from the problems)" or specify it manually; it affects subject-specific layout).
 - **Total score / completion time**: set the total score of the whole paper and the suggested duration.
 - **Show marks**: assign a mark to each question, with support for **automatic equal distribution**; the system verifies that the sum of the assigned marks matches the total score.
 - **Examinee instructions**: explanatory text below the title and above the questions (e.g. "1. The exam duration is 120 minutes...").
 - **Footer**: can show "Page N of M".
 - **Question sections**: drag smaller questions into a "section", give each section a title (e.g. "1. Reading comprehension (modern Chinese)") and a mark; each section automatically summarizes "X questions, Y points in total" from its contained questions.
+- **Essay answer area**: essays can use an answer-area style — auto (by subject) / grid essay paper / ruled lines / none — with configurable rows, columns per row, and line spacing.
 - **Anti-copy**: can be enabled to protect the paper surface.
+- **Problem images**: control the scale of statement illustrations, with auto-generated "Figure N" captions.
 
 ### Calculation Question Group
 
 You can insert a **calculation question group** into a paper: choose a category, difficulty, question count and mark, and the system generates a batch of **deterministic** calculation questions and renders them into the PDF (the sample composition follows the same rules as online practice batches), ideal for making mental math / calculation sheets.
+
+### Listening Paper Generation
+
+Supports English listening paper generation, with listening audio on separate pages:
+
+- **Listening audio generation**: supports TTS voice synthesis to generate listening audio, configurable for voice gender (male/female) and reading repetitions.
+- **Voice gender configuration**: supports various voice gender combination modes such as all-male, all-female, male-first-then-female, female-first-then-male.
+- **Multiple readings**: listening audio can be set for multiple readings, with speed control for each reading when reading two or more times.
+- **Separate pages**: listening audio is on separate pages in the PDF, convenient for printing and playback.
 
 ## Two Layout Modes
 
