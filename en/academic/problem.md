@@ -76,7 +76,10 @@ When contributing a question (path: the "Contribute Question" entry in the navig
 - **Subject and sub-discipline**: choose the correct subject. Mathematics, physics, chemistry, biology, geography, and history are further divided into sub-disciplines; choose the closest fit (such as "Geometry", "Mechanics", "Ancient Chinese History").
 - **Grade level**: choose according to the question's actual applicable grade range (lower elementary / upper elementary / middle school / high school). Note that physics, chemistry, geography, history, and politics do not have elementary school levels; follow what the platform displays when choosing.
 - **Difficulty stars**: honestly choose the **basic difficulty** (gimme / easy / medium / hard / extremely hard); STEM subjects may additionally choose a **competition difficulty** (comp- up to IMO+). The determination standards for each level (including subject-specific anchors) are in the [Difficulty Star Rating Standards](/en/academic/difficulty). Deliberately inflating or deflating the difficulty interferes with the site-wide difficulty search and learning recommendations and counts as improper behavior.
-- **Question type**: choose according to the question's actual answering mode (fill-in-the-blank / multiple choice / equivalent expression / true-false / proof / word problem / short answer / essay / listening, etc.). Different subjects support different question types; follow what the platform displays.
+- **Question type**: on the contribute / edit page, choose according to the question's actual answering mode (fill-in-the-blank / multiple choice / reading comprehension / cat-fishing / short answer / essay / listening / speaking, etc.); follow what the platform displays. "Equivalent expression" is folded into **fill-in-the-blank**, "true / false" into **multiple choice**, and "proof / application" into **short answer**.
+  - After choosing "**Reading comprehension**" (Chinese): write the passage (auto-centered; supports `++text++` underline and `==text==` emphasis dots) and **add sub-questions** (passage + sub-questions); each is graded independently. See the [Special Question Types Guide](/en/basic/special-types).
+  - After choosing "**Cat-fishing**" (English): mark gaps in the passage with `____` (4+ underscores) or `___36___` (underscores around a number); then fill the word bank under "Word-bank options" and a per-gap answer (the answer count must match the gap count). See the [Special Question Types Guide](/en/basic/special-types).
+  - "**Listening**" requires uploading listening audio and its transcript; "**Speaking**" requires the reference text.
 - **Tags**: choose fitting knowledge-point tags; if no suitable tag exists, you may propose a new one. Tags are an important basis for search and learning recommendations; **do not use tags unrelated to the question** to pad the count.
 - **Editor mode**: both visual mode and code mode are acceptable; both save as Markdown and can be switched at any time. For STEM formulas, the **visual formula input** feature is recommended to ensure correct LaTeX from the start.
 
@@ -86,12 +89,12 @@ Question content must not contain any illegal, sensitive, pornographic, violent,
 
 ### Questions Already Covered by the Calculation Zone (Not Accepted)
 
-**Contributions of problems that the Calculation Zone already fully supports are no longer accepted.** The Calculation Zone (see the [Calculation Zone Guide](/en/basic/calc)) covers nine types of calculation questions — mental math, clever four-operation arithmetic, integral expressions, linear equations in one variable, factorization, linear inequalities in one variable, systems of linear inequalities, quadratic equations in one variable, and systems of linear equations — all **auto-generated and auto-graded** by the system, with any number of questions reproducible by category / difficulty / options. These knowledge points already have complete functional support, so contributing similar problems to the question bank:
+**Contributions of problems that the Calculation Zone already fully supports are no longer accepted.** The Calculation Zone (see the [Calculation Zone Guide](/en/basic/calc)) covers ten types of calculation questions — mental math, clever four-operation arithmetic, integral expressions, linear equations in one variable, factorization, linear inequalities in one variable, systems of linear inequalities, quadratic equations in one variable, systems of linear equations, and trigonometric functions — all **auto-generated and auto-graded** by the system, with any number of questions reproducible by category / difficulty / options. These knowledge points already have complete functional support, so contributing similar problems to the question bank:
 
 - **Wastes review resources**: the system can generate the same kind of problems instantly; neither manual question-setting by contributors nor question-by-question review by administrators is necessary;
 - **Dilutes question bank quality**: simple calculation problems mixed into the bank interfere with difficulty search and learning recommendations.
 
-Therefore, problems that fall within the nine Calculation Zone types and do not exceed its capabilities **will be directly rejected during review**. Please practice in the [Calculation Zone](/en/basic/calc) instead, or generate the corresponding calculation question group through [Paper Generation](/en/basic/paper). If you believe a problem goes beyond the Calculation Zone's support scope (for example, it involves a more complex solution or special requirements), state this in the title or tags when submitting so administrators can judge.
+Therefore, problems that fall within the ten Calculation Zone types and do not exceed its capabilities **will be directly rejected during review**. Please practice in the [Calculation Zone](/en/basic/calc) instead, or generate the corresponding calculation question group through [Paper Generation](/en/basic/paper). If you believe a problem goes beyond the Calculation Zone's support scope (for example, it involves a more complex solution or special requirements), state this in the title or tags when submitting so administrators can judge.
 
 ::: danger Repeated Submission
 Repeatedly resubmitting rejected calculation problems counts as wasting administrative resources and will be handled under the [Community Rules and Penalties](/en/policies/rule), possibly resulting in revoked contribution permission.
@@ -101,8 +104,9 @@ Repeatedly resubmitting rejected calculation problems counts as wasting administ
 
 Questions support uploading image attachments and listening audio attachments; attachments should serve the question itself:
 
-- **Image attachments**: when uploading **statement illustrations / figures / solution images**, make sure the images are clear, correctly oriented, and match the question's content. Images intended for the solution will be displayed as part of this question's solution. Do not upload images unrelated to the question, memes, or ads.
+- **Image attachments**: when uploading **statement illustrations / figures / solution images / option images**, make sure the images are clear, correctly oriented, and match the question's content. Images intended for the solution will be displayed as part of this question's solution, and option images are shown on their corresponding options. Do not upload images unrelated to the question, memes, or ads.
 - **Listening audio** (English listening questions only): upload **audio-only** listening audio (max 50 MB) and fill in the **listening material** (the listening transcript); the two should be consistent in content. The listening audio should be clear, free of noise, and free of spoilers (do not reveal answers before the questions are read).
+- **Speaking question reference text** (speaking questions only): fill in the **reference text** for AI scoring. The reference text should be the content that students need to read aloud or repeat, clear, complete, and unambiguous.
 - **File source**: attachments should be self-made or authorized material. When screenshotting others' materials, confirm that there are no copyright or privacy issues.
 - **Attachments consistent with the statement**: illustrations should match the description in the statement, and listening audio should match the listening material. An attachment that contradicts the statement will directly make the question unanswerable.
 
@@ -131,6 +135,15 @@ For a rejected question contribution, if you believe the review was incorrect, y
 ::: tip Appeal Process
 For the specific operations of appeals and tickets, see the "Content Appeals" and "Reporting & Ticket System" sections of the [Account & Security Guide](/en/basic/account-safety).
 :::
+
+### Question Management
+
+Administrators have more granular management permissions for questions:
+
+- **Question removal**: removes violating or problematic questions; removed questions cannot be practiced but historical records are preserved.
+- **Republishing**: re-reviews removed questions; they can be republished after approval.
+- **Field-level partial rejection**: listening audio/answers/solutions can be individually blocked from publishing without affecting other content.
+- **Report handling linkage**: when handling reports, you can linkedly remove reported questions with one click.
 
 ## 6. Problem Set Standards
 
@@ -184,6 +197,38 @@ A: By default, a problem set is maintained by its creator. If you want multi-per
 
 **Q: What should I do if my question is reported?**
 A: A report generates a ticket; an administrator re-checks it and handles it. If you believe the report is untrue or the handling improper, you can appeal through the ticket system.
+
+## Excellent Answer
+
+Starting v1.0, **subjective question types** (short answer / essay / speaking, etc.) support an **excellent answer** field as a reference for learners.
+
+### Who Can Set It
+
+- **Bank problem**: the **creator** or an **admin** when creating / editing.
+- **Team problem**: a **team admin** (or a group admin interfering with the sub-team) when creating / editing a team problem.
+- **Assignment problem**: on the homework **Manage** tab, the assignment admin can **override per problem**; this overrides both the bank and the team problem (`ap > p > tp`).
+
+### Visibility
+
+- **Creator** and **admin** always see it in the editor.
+- **Regular learners** only see it on the problem detail page **after submitting** that problem (or, for subjective questions, **after grading**); otherwise they see a hint "Visible after submission".
+
+### Length & Format
+
+- Cap: **10,000 characters** (same as `solution_md`); overflow is truncated.
+- Supports Markdown + LaTeX (same renderer as the problem statement).
+- Structured objects (e.g. speaking reference translations, grading criteria) are stored as JSONB.
+
+### Learner View
+
+- A dedicated "Excellent answer" card sits below the solution (only when the learner is eligible).
+- Subjective questions stay hidden until **graded** (anti-spoiler) or until the learner self-achieves AC; afterwards the answer shows.
+- Same rules apply to team and assignment problems.
+
+### Related
+
+- **Excellent answer** (question level) is independent of **Excellent homework** (submission level).
+- Assignment admins can set a per-problem excellent answer that overrides the bank/team answer.
 
 ## Related Links
 
