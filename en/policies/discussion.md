@@ -1,7 +1,3 @@
----
-title: Discussion Board Guide
----
-
 # Discussion Board Guide
 
 The LiuMing discussion board (https://liumingbbs.franj2.top) is LiuMing's official community for exchanging study tips, discussing problem solutions, sharing experiences, and asking for help. All LiuMing users can take part in discussions here and help create a friendly, professional learning atmosphere.

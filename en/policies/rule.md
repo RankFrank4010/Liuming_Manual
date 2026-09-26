@@ -1,7 +1,3 @@
----
-title: Community Rules and Penalties
----
-
 # Community Rules and Penalties
 These rules are established to ensure the smooth operation of the community. They apply to every feature of this site.
 These rules may be revised as circumstances change.
